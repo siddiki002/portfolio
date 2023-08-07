@@ -1,38 +1,575 @@
-.App {
+body{
+  /* background-color: rgb(4, 4, 128); */
+  background: linear-gradient(to bottom left ,rgb(3, 3, 82) , rgb(139, 25, 39));
+  /* background-repeat: no-repeat; */
+  font-family: 'Cabin', sans-serif;
+  zoom: normal;
+  user-zoom: fixed;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  /* background-image: linear-gradient(to bottom right , rgb(4, 4, 95) , rgb(4, 4, 95)); */
+  
+}
+
+.primary{
+  color: white;
+}
+.secondary{
+  color: #FF0642;
+}
+
+/* CSS for navbar.js */
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  margin-top: 0.25em;
+}
+.list a{
+  margin-left: 5em;
+  /* margin-right: 5em; */
+}
+.list a:hover{
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #FF0642;
+}
+
+.name {
+  width: fit-content;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0.25em;
+  margin-left: 17%;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+/* CSS for profile.js */
+
+.introduction{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  height: fit-content;
+  /* font-size: larger; */
+}
+.introduction--name{
+  display: grid;
+  grid-template: auto / auto;
+  height: fit-content;
+  gap: 10px;
+  width: 45%;
+}
+
+.welcome--site{
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+}
+.brief--intro h1{
+  font-weight:700;
+  font-size: 3em;
+}
+.brief--intro p{
+  font-size: 1em;
+}
+.portfolio--buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0.25em;
+}
+.portfolio--button {
+  width: 120%;
+  height: 200%;
+  font-weight: medium;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  border-radius: 2em;
+  color: white;
+
+}
+.portfolio--button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#hire--me{
+  background-color: #FF0642;
+}
+#view--portfolio{
+  background-color: inherit;
+}
+#view--portfolio:hover{
+  background-color: #FF0642;
+}
+#hire--me:hover{
+  background-color: inherit;
+}
+.border-parent{
+  width: fit-content;
+  padding: 0.25em;
+  background: linear-gradient(to right , red , purple);
+  position: relative;
+}
+.profile-image {
+  width: 400px;
+  height: 533px;
+}
+.profile{
+  float: right;
+  height: 200px;
+  width: 150px;
+  padding-right:25%;
+  padding-bottom: 5%;
+  /* padding-left: 25%; */
+}
+
+
+/* CSS for hireme page  */
+.hire--quote{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  margin-top: 5%;
+  margin-left: 25%;
+  width: fit-content;
+  padding: 2em 2em 3em 2em;
+  border: 2px solid rgba(209, 198, 198, 0.411);
+}
+
+.hire--quote p{
+  float: right;
+}
+.hireme--box{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  color: #F5F5F5;
+
+}
+.email--form{
+  width: 50%;
+  font-size: 24px;
+  background-color: #050505;
+  padding: 25px 25px 25px 25px;
+  border-radius: 40px;
+}
+.email--form label{
+  margin-right: 75%;
+}
+#hireMe--input{
+  height: 30px;
+  font-size: 20px;
+}
+#hireMe--textarea{
+  height: 40px;
+  font-size: 20px;
+}
+#hireMe--button{
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: transform 300ms;
+}
+#hireMe--button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.cv--box{
+  text-align: center;
+  height: 100%;
+  width: 30%;
+}
+.cv--button{
+  margin-top: 20%;
+  width: 50%;
+  padding: 25px 25px 25px 25px;
+  font-size: large;
+  border-radius: 30px;
+  background-color: inherit;
+  transition: transform 300ms;
+  font-weight: 900;
+}
+.cv--button:hover{
+  transform: scale(1.1);
+  background-color: #FF0642;
+  color: white;
+  cursor: pointer;
+}
+/* CSS for about.js */
+.aboutme {
+  width: 38rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin-left: 25%;
+  margin-top: 10%;
+  border-radius: 0.6em;
+  background-color: rgb(83, 83, 224);
+  box-shadow: 0px 2px 15px 2px;
+  transition: width 2s , height 2s , transform 0.3s;
+}
+.aboutme:hover{
+  transform: scale(1.1);
+}
+.aboutme span{
+  cursor: pointer;
+  color: #FF0642;
+}
+
+/* CSS for project.js */
+
+.projects{
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projects--array{
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1%;
+  margin-bottom: 5%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.show--projects{
+  opacity: 1;
+}
+.project--heading{
+  font-weight: 2000;
+  font-size: 3.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CSS for Card.js  */
+.card {
+  display: grid;
+  grid-template: auto/auto;
+  color: white;
+  transition: transform 1s;
+}
+.card:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.card--image {
+  position: relative;
+  text-align: center;
+}
+.card--image img{
+  width: 100%;
+  height: 350px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.card--name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(10, 37, 216);
+}
+.card--link{
+  text-align: center;
+  background-color: #F5F5F5;
+  height: 100%;
+  font-size: 24px;
+  border-radius: 18px;
+}
+.card--link:hover{
+  transform: scale(1.05);
+}
+.card--link a{
+  text-decoration: none;
+}
+.arrow-right{
+  position: relative;
+  text-align: center;
+  color: white;
+  transition: transform 1s;
+}
+.arrow-right:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.card--description{
+  font-size: large;
+}
+/* CSS for techstack.js */
+
+.tech--stack{
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 1500;
+}
+.techStack--cards{
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.techStack--cards img{
+  height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CSS for contact.js */
+.contact--me{
+  margin-top: 5%;
+  display: grid;
+  grid-template: auto/auto;
+  text-align: center;
+  row-gap: 1%;
+  font-size: 1.5em;
+  width: 100%;
+  color: #F5F5F5;
+  height: 200vh;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  gap: 1em;
+  margin-top: 5%;
+  margin-left: 4.5em;
+}
+
+.socials img{
+  height: 100%;
+  width: 50%;
+  transition: transform 2s;
+}
+.socials img:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 2px 15px 2px;
+}
+.email--form label{
+  padding-right: 13%;
+}
+.email--form form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* text-align: center; */
+  gap: 10px;
+  /* height: 100vh; */
+}
+#from_email, #from_name{
+
+  width: 30%;
+  height: 15%;
+}
+#message{
+  height: 20%;
+  width: 30%;
+}
+#submit--button{
+  width: 15%;
+  height: 50%;
+  background-color: inherit;
   color: white;
+  border-radius: 10px;
+  transition: transform 500ms;
+  margin-top: 1%;
+  padding: 10px 10px 10px 10px;
+}
+#submit--button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: #FF0642;
+}
+.email--sent--box{
+  background-color: #f1f1f1;
+  width: 25%;
+  margin-left: 40%;
+  color: black;
+  border-radius: 15px;
+}
+#contact--form{
+  margin-left: 25%;
+}
+/* CSS for scrollbar  */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FF0642;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width : 420px){
+  
+  .navbar{
+    font-size: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  .name{
+    gap: 5px;
+    margin-left: 2%;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .introduction{
+    display: flexbox;
+    font-size: 8px;
+    gap: 1px;
+    height: fit-content;
+  }
+  .profile-image{
+    width: 120px;
+    height: 200px;
+  }
+  .introduction--name{
+    row-gap: 0px;
+    /* margin-top: 3%; */
+  }
+  .portfolio--button{
+    width: fit-content;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .portfolio--button:hover{
+    transform: scale(1.03);
+  }
+  .aboutme{
+    width: fit-content;
+    margin-left: 2%;
+    font-size: 14px;
+  }
+  .projects--array{
+    gap: 2px;
+    font-size: 14px;
+  }
+  .card--name{
+    font-size: 24px;
+  }
+  .arrow{
+    font-size: 12px;
+  }
+  .arrow-right svg{
+    width: 25px;
+    height: 50px;
+  }
+  .card{
+    font-size: 14px;
+  }
+  .card--description{
+    font-size: 14px;
+  }
+  .card--link{
+    font-size: 14px;
+  }
+  .projects{
+    font-size: 10px;
+  }
+  .tech--stack{
+    font-size: 16px;
+  }
+  .techStack--cards{
+    padding: 5px 0px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3px;
+  }
+  .techStack--cards img{
+    height: 55px;
+  }
+  .contact--me{
+    margin-top: 1%;
+    display: grid;
+    grid-template: auto/auto;
+    text-align: center;
+    /* row-gap: 1%; */
+    font-size: 14px;
+    width: 100%;
+    color: #F5F5F5;
+    /* height: 200vh; */
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: auto;
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+    /* margin-top: 5%; */
+    /* margin-left: 4.5em; */
+  }
+  
+  .socials img{
+    height: 200%;
+    width: 100%;
+    transition: transform 2s; 
+    margin-right: 10%;
+    margin-left: 0%;
+  }
+  .socials img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 2px 15px 2px;
+  }
+  .hire--quote{
+    /* margin-right: 15%; */
+    font-size: 12px;
+    width: fit-content;
+    /* margin-left: 5%; */
+    margin-left: 0%;
+  }
+  .email--form{
+    font-size: 14px;
+    height: fit-content;
+  }
+  .email--form input{
+    font-size: 14px;
+  }
+  #hireMe--input{
+    font-size: 14px;
+    width: auto;
+    height: auto;
+  }
+  #hireMe--textarea{
+    font-size: 14px;
+    height: auto;
+  }
+  #hireMe--button{
+    font-size: 14px;
+    width: fit-content;
+  }
+  .hireme--box{
+    height: 60vh;
+  }
+  .cv--button{
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 10px;
   }
 }
