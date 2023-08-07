@@ -8,7 +8,6 @@ export default function Footer (){
         <>
             <div className="footer">
                 <div className="footer--images">
-                    eslint-disable-next-line
                     <a href="https://www.facebook.com/ammar.siddiqui.142">
                         <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook-new"/>
                     </a>
