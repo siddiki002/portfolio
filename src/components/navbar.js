@@ -14,12 +14,16 @@ export default function Navbar(){
                 
             </div>
             <div className='list primary'>
-                <nav>
-                    <a onClick={() => navigate("/")}><i class="bi bi-house"></i> Home</a>
-                    <a onClick={() => navigate("/portfolio")}><i class="bi bi-person-circle"></i> Portfolio</a>
-                    <a onClick={()=> navigate("/contact")}><i class="bi bi-telephone"></i> Contact</a>
-                    <a onClick={() => navigate("/hireMe")}><i class="bi bi-person-add"></i> Hire Me</a>
-                </nav>
+                    
+                    <h5 onClick={() => navigate("/")}><i class="bi bi-house"></i> Home</h5>
+                    <span>
+                    <h5 onClick={() => navigate("/portfolio")}><i class="bi bi-person-circle"></i> Portfolio</h5>
+
+                    </span>
+                    <h5 onClick={()=> navigate("/contact")}><i class="bi bi-telephone"></i> Contact</h5>
+                    <h5 onClick={() => navigate("/hireMe")}><i class="bi bi-person-add"></i> Hire Me</h5>
+                    
+                
             </div>
         </div>
     )

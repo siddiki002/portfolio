@@ -8,6 +8,7 @@ export default function Footer (){
         <>
             <div className="footer">
                 <div className="footer--images">
+                    eslint-disable-next-line
                     <a href="https://www.facebook.com/ammar.siddiqui.142">
                         <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook-new"/>
                     </a>
@@ -23,10 +24,10 @@ export default function Footer (){
                     
                 </div>
                 <div className="footer--links">
-                    <a onClick={() => navigate('/')}>Home</a>
-                    <a onClick={() => navigate('/portfolio')}>Portfolio</a>
-                    <a onClick={() => navigate('/contact')}>Contact</a>
-                    <a onClick={() => navigate('/hireMe')}>Hire Me</a>
+                    <h5 onClick={() => navigate('/')}>Home</h5>
+                    <h5 onClick={() => navigate('/portfolio')}>Portfolio</h5>
+                    <h5 onClick={() => navigate('/contact')}>Contact</h5>
+                    <h5 onClick={() => navigate('/hireMe')}>Hire Me</h5>
                 </div>
                 <div className="footer--copyrights">
                 <img src="https://img.icons8.com/material-outlined/24/000000/copyright.png" alt="copyright"/>

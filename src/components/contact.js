@@ -59,15 +59,15 @@ export default function ContactMe(){
             </Modal>
             <div className="socials">
                 <a href="https://www.linkedin.com/in/muhammad-ammar-siddiqui-09b519221/" target="new">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg"/>    
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" alt=""/>    
                 </a>
                 <a href="https://github.com/siddiki002">
 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" target="new"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" target="new" alt=""/>
                 </a>
                 <a href="https://www.facebook.com/ammar.siddiqui.142">
 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" target="new"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" target="new" alt=""/>
                 </a>
             </div>
             <div>

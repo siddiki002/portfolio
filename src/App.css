@@ -27,11 +27,15 @@ body{
   height: fit-content;
   margin-top: 0.25em;
 }
-.list a{
+.list{
+  display: flex;
+  flex-direction: row;
+}
+.list h5{
   margin-left: 5em;
   /* margin-right: 5em; */
 }
-.list a:hover{
+.list h5:hover{
   cursor: pointer;
   border-radius: 5px;
   background-color: #FF0642;
