@@ -57,7 +57,7 @@ export default function HireMe(){
             </Modal>
             <div className="hireme--box">
                 <div className="cv--box">
-                    <a href='./files/CV.pdf' target="blank" download='Ammar_Siddiqui CV.pdf'>
+                    <a href='./files/Ammar_Siddiqui.pdf' target="blank" download='Ammar Siddiqui.pdf'>
                         <button className="cv--button">Download CV</button>    
                     </a>
                 </div>
